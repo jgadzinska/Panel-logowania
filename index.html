@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Zaloguj się</h1>
+        <form id="panel" method="post">
+            <div class="input-control">
+                <label for="username">Nazwa użytkownika</label>
+                <input type="text" id="username" name="username" placeholder="Wpisz adres e-mail lub numer telefonu" required>
+            </div>
+            <div class="input-control">
+                <label for="password">Hasło</label>
+                <input type="password" id="password" name="password" placeholder="Wpisz hasło" required>
+            </div>
+            <div class="links">
+                <input type="checkbox"><label class="check1" for="checkbox">Zapamiętaj mnie!</label>
+                <label class="check2" for="checkbox">Nie pamiętasz hasła?</label>
+            </div>
+            <input class="btn" type="submit" value="Zaloguj">
+            <div class="form_spacer"></div>
+            <span>NIE MASZ KONTA?</span>
+            <input class="btn2" type="submit" value="Zarejestruj się">
+        </form>
+    </div>
+</body>
+</html>
