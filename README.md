@@ -1,1 +1,1 @@
-Panel logowania wykonany w HTML i CSS
+Panel logowania z automatyczną walidacją wykonany w HTML i CSS
