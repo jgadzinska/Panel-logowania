@@ -1,117 +1,146 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body {
-    background-color: rgb(48, 47, 47);
+
+.container {
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(6, 1, 34);
 }
-.conteiner {
-    margin-top: 100px;
-    width: 450px;
-    height: auto;
-    background: white;
-    box-shadow: 3px 4px 3px 4px white;
+
+.card {
+    width: 400px;
+    height: 650px;
+    box-shadow: 0 0 4px 3px white;
+    perspective: 1000px;
+    background-color: white;
 }
-h1 {
-    padding: 20px 100px;
-    font-size: 45px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: black;
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    background-color: white;
 }
-#panel {
-    padding: 20px 40px;
+
+
+/* CARD LOGIN I REGISTRATION */
+
+.cardLogin, .cardRegist {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 55px;
+    backface-visibility: hidden;
 }
-.input-control label {
-    padding: 10px;
-    font-size: 20px;
-    color:rgb(79, 66, 66);
+
+.cardRegist {
+    transform: rotateY(180deg);;
 }
-.input-control input {
-    height: 40px;
-    width: 350px;
-    padding: 0 5px;
-    margin: 10px 10px 15px 10px;
-    font-size: 18px;
+
+h2 {
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-box {
+    width: 100%;
+    height: 45px;
+    margin: 6px 0;
+    border: 1px solid red;
+    border-radius: 20px;
     outline: none;
+    text-align: center;
+    color: black;
+    font-size: 15px;
 }
+
+
+/* BUTTONS */
+
+button {
+    width: 100%;
+    height: 45px;
+    margin: 25px 0 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid  rgb(54, 54, 247);
+    background: rgb(54, 54, 247);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn, .btn1 {
+    color: white;
+    border: 2px solid rgb(79, 170, 79);
+    background: rgb(79, 170, 79);
+    font-size: 18px;
+}
+
+.btn1 {
+    margin-top: 10px;
+}
+
 .links {
     display: flex;
     justify-content: space-between;
-    text-decoration-line: underline;
-    padding: 0 15px;
+    padding: 4px 10px;
 }
-.links .check1 {
+
+.check1 {
    position: relative;
-   right: 35px;
+   right: 5px;
 }
-.check1, .check2 {
-    font-size: 15px;
-    padding: 5px;
+
+.check1, .check2, .check {
+    font-size: 14px;
+    padding: 6px;
     cursor: pointer;
 }
-.btn {
-    margin: 25px 10px 35px 10px;
-    height: 45px;
-    width: 365px;
+
+.text {
     font-size: 20px;
-    color: white;
-    outline: none;
-    cursor: pointer;
-    font-weight: bold;
-    background: blue;
-    border-radius: 10px;
-    border: 1px solid blue;
+    margin-top: 130px;
+    text-align: center;
 }
-.form_spacer {
-    height: 2px;
-    margin: 0 auto 20px;
-    width: 80%;
-    background: rgb(96, 96, 96);
-}
-span {
+
+.text1 {
     font-size: 20px;
-    font-weight: 500;
-    color: rgb(212, 57, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 100px 0 10px 0;
+    text-align: center;
 }
-.btn2 {
-    margin: 25px 10px;
-    height: 45px;
-    width: 365px;
-    font-size: 20px;
-    color: white;
-    outline: none;
-    cursor: pointer;
-    font-weight: bold;
-    background: rgb(240, 159, 8);
-    border-radius: 10px;
-    border: 1px solid rgb(220, 145, 5);
+
+.submit-btn:hover {
+    background: rgb(36, 75, 250);
 }
-.links label:hover {
-    color: rgb(11, 11, 155);
+
+label:hover {
+    color: rgb(110, 107, 107);
 }
-.btn:hover {
-    background: rgb(46, 46, 190);
-}
-.btn2:hover {
-    background: rgb(243, 172, 39);
-}
-.input-control input:valid {
-    border: 2px solid green;
-}
-.input-control input:invalid {
-    border: 2px solid red;
-}
+
 ::placeholder {
-    font-size: 12px;
+    font-size: 13px;
     color: rgb(182, 21, 21);
 }
 
 
+/* VALIDATION */
 
+.input-box:valid {
+    border: 2px solid green;
+}
+
+.input-box:invalid {
+    border: 2px solid red;
+}

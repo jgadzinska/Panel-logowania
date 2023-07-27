@@ -6,28 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logowanie</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="conteiner">
-        <h1>Zaloguj się</h1>
-        <form id="panel" method="post">
-            <div class="input-control">
-                <label for="username">Nazwa użytkownika</label>
-                <input type="text" id="username" name="username" placeholder="Wpisz adres e-mail lub numer telefonu" required>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="box" id="card">
+
+
+                <!-- CARD LOGIN -->
+
+                <div class="cardLogin">
+
+                    <h2>Logowanie</h2>
+
+                    <form>
+
+                        <input type="email" class="input-box" placeholder="Email" required>
+                        <input type="password" class="input-box" placeholder="Hasło" required>
+
+                        <button type="submit" class="submit-btn">Zaloguj się</button>
+
+                        <div class="links">
+                            <input type="checkbox"><label class="check1" for="checkbox">Zapamiętaj mnie!</label>
+                            <label class="check2" for="checkbox">Nie pamiętasz hasła?</label>
+                        </div>
+
+                    </form>
+
+                    <div class="text">Nie masz jeszcze konta?</div>
+
+                    <button type="button" class="btn" onclick="openRegistration()">Załóż konto</button>
+
+                </div>
+
+
+                <!-- CARD REGISTRATION -->
+
+                <div class="cardRegist">
+
+                    <h2>Rejestracja</h2>
+
+                    <form>
+                        <input type="text" class="input-box" placeholder="Imię i nazwisko" required>
+                        <input type="email" class="input-box" placeholder="Email" required>
+                        <input type="password" class="input-box" placeholder="Hasło" required>
+
+                        <button type="submit" class="submit-btn">Zarejestruj się</button>
+
+                        <input type="checkbox"><label class="check" for="checkbox">Zapamiętaj mnie!</label>
+
+                    </form>
+
+                    <div class="text1">Masz konto?</div>
+
+                    <button type="button" class="btn1" onclick="openLogin()">Zaloguj się</button>
+
+                </div>
+
             </div>
-            <div class="input-control">
-                <label for="password">Hasło</label>
-                <input type="password" id="password" name="password" placeholder="Wpisz hasło" required>
-            </div>
-            <div class="links">
-                <input type="checkbox"><label class="check1" for="checkbox">Zapamiętaj mnie!</label>
-                <label class="check2" for="checkbox">Nie pamiętasz hasła?</label>
-            </div>
-            <input class="btn" type="submit" value="Zaloguj">
-            <div class="form_spacer"></div>
-            <span>NIE MASZ KONTA?</span>
-            <input class="btn2" type="submit" value="Zarejestruj się">
-        </form>
+
+        </div>
+
     </div>
+
+
+    <script src="app.js"></script>
+
+
 </body>
 </html>
