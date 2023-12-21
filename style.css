@@ -170,13 +170,3 @@ label:hover {
     color: rgb(182, 21, 21);
 }
 
-
-/* VALIDATION */
-
-.input-box:valid {
-    border: 2px solid green;
-}
-
-.input-box:invalid {
-    border: 2px solid red;
-}
