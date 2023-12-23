@@ -111,7 +111,8 @@ button {
     border-radius: 8px;
     outline: none;
     border: 2px solid  rgb(54, 170, 247);
-    color: rgb(54, 170, 247);
+    color: white;
+    background: rgb(54, 170, 247);
     font-size: 18px;
     cursor: pointer;
 }
@@ -157,8 +158,7 @@ button {
 }
 
 .submit-btn:hover {
-    background: rgb(54, 170, 247);
-    color: white;
+    background: rgb(40, 151, 226);
 }
 
 label:hover {
