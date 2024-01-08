@@ -1,1 +1,1 @@
-Panel logowania z automatyczną walidacją wykonany w HTML, CSS, JavaScript.
+Login and registration with validation.
