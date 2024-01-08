@@ -1,3 +1,6 @@
+
+//OPEN LOGIN AND REGISTRATION
+
 const card = document.getElementById("card");
 
 function openRegistration() {
