@@ -1,1 +1,1 @@
-Login and registration with validation.
+Login and registration with validation
