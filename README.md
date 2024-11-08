@@ -1,1 +1,5 @@
-Projekt przedstawia prosty panel logowania i rejestracji, wykonany przy uzyciu HTML, CSS, JavaScript. 
+Demo: https://jgadzinska.github.io/Panel-logowania/
+
+Technologie: HTML, CSS, JavaScript.
+
+Projekt przedstawia panel logowania i rejestracji z walidacją. 
