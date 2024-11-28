@@ -1,15 +1,15 @@
 Demo: https://jgadzinska.github.io/Panel-logowania/
 
-Technologie: HTML, CSS, JavaScript.
+Technologies: HTML, CSS, JavaScript.
 
-Projekt przedstawia panel logowania i rejestracji z walidacją. 
+The project presents a login and registration panel with validation.
 
-  Funkcje:
+Features:
 
-- logowanie - możliwość logowania przez google, facebooka lub wprowadzenie nazwy użytkownika i hasła, walidacja poprawności danych. Zapamiętanie hasła oraz pomoc przy jego zapomnieniu.
+- login - possibility of logging in via Google, Facebook or entering username and password, validation of data correctness. Remembering your password and helping you forget it
 
-- rejestracja - poprzez google, faceboka lub wprowadzenie nazwy użytkownika, email, hasło, walidacja. Zapamiętanie hasła.
+- registration - via Google, Facebook or entering username, email, password, validation. Remembering your password
 
-- responsywność - dostosowanie wyglądu panelu do różnych urządzeń.
+- responsiveness - adapting the appearance of the panel to different devices.
 
-- efekt wizualny - płynne przełączenie między logowaniem a rejestracją.
+- visual effect - smooth switch between login and registration.
